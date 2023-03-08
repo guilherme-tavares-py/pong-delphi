@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/03/06 14:42:25.000.276,=C:\Users\fotos\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/07 07:40:51.000.098,=C:\Users\fotos\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/07 07:52:47.000.431,C:\Users\fotos\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\fotos\OneDrive\Área de Trabalho\Pong\UnitPrincipal.dfm</Transaction>
+    <Transaction>2023/03/07 07:52:47.000.431,C:\Users\fotos\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\fotos\OneDrive\Área de Trabalho\Pong\UnitPrincipal.pas</Transaction>
+    <Transaction>2023/03/07 08:10:55.000.604,C:\Users\fotos\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\fotos\OneDrive\Área de Trabalho\Pong\Project1.dproj</Transaction>
+    <Transaction>2023/03/07 13:23:14.809,=C:\Users\fotos\OneDrive\Área de Trabalho\Pong\Unit2.pas</Transaction>
+    <Transaction>2023/03/07 13:25:27.620,C:\Users\fotos\OneDrive\Área de Trabalho\Pong\UnitMenu.pas=C:\Users\fotos\OneDrive\Área de Trabalho\Pong\Unit2.pas</Transaction>
+    <Transaction>2023/03/07 13:25:27.620,C:\Users\fotos\OneDrive\Área de Trabalho\Pong\UnitMenu.dfm=C:\Users\fotos\OneDrive\Área de Trabalho\Pong\Unit2.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
