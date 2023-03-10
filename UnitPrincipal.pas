@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, UnitMenu;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
 
 type
   TForm1 = class(TForm)
@@ -12,6 +12,10 @@ type
     Ball: TShape;
     Timer1: TTimer;
     Player2: TShape;
+    Shape1: TShape;
+    Label1: TLabel;
+    PlayerScore: TLabel;
+    Player2Score: TLabel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure Timer1Timer(Sender: TObject);
     procedure BallMovement();
@@ -27,6 +31,8 @@ var
   Form1: TForm1;
   BallMovementY: integer;
   BallMovementX: integer;
+  PlayerScoreNumber: integer;
+  Player2ScoreNumber: integer;
 
 
 
@@ -66,11 +72,21 @@ begin
   Ball.Top := Ball.Top + BallMovementY;
   Ball.Left := Ball.Left + BallMovementX;
 
-  if (Ball.Left > 400) or (Ball.Left < 0) then
+  if (Ball.Left < 0) then
   begin
+    Player2ScoreNumber := Player2ScoreNumber + 1;
+    Player2Score.Caption := IntToStr(Player2ScoreNumber);
     Ball.Top := 190;
     Ball.Left := 190;
     Player.Top := 160;
+  end;
+  if (Ball.Left > 400) then
+  begin
+      PlayerScoreNumber := PlayerScoreNumber + 1;
+      PlayerScore.Caption := IntToStr(PlayerScoreNumber);
+      Ball.Top := 190;
+      Ball.Left := 190;
+      Player.Top := 160;
   end;
   if (Ball.Top = 390) or (Ball.Top = 0) then
   begin
@@ -83,7 +99,7 @@ begin
       begin
         BallMovementX := BallMovementX * (-1);
       end;
-  if (Ball.Left > 360) then
+  if (Ball.Left > 370) then
     if (Ball.Top >= Player2.Top) and (Ball.Top <= Player2.Top + 60) then
         begin
           BallMovementX := BallMovementX * (-1);
@@ -97,6 +113,8 @@ begin
 end;
 
 begin
-  BallMovementX := -10;
-  BallMovementY := 10;
+  BallMovementX := -1;
+  BallMovementY := 1;
+  PlayerScoreNumber := 0;
+  Player2ScoreNumber := 0;
 end.

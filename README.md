@@ -1,1 +1,1 @@
-# pong-delphi
+# pong
